@@ -1,0 +1,36 @@
+.services {
+  padding: var(--vr-section-y-1) 0;
+  &__container {
+  }
+  &__title {
+    max-width: 800rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  &__subtitle {
+    max-width: 800rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  &__row {
+    &-col {
+    }
+    &-card {
+    }
+  }
+  &__logo-brand-3d {
+    width: 100%;
+    max-width: 476rem;
+    margin: -140rem -210rem -94rem auto;
+    transform: rotate(-15deg);
+    pointer-events: none;
+    user-select: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

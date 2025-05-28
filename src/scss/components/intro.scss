@@ -1,0 +1,43 @@
+.intro {
+  &__container {
+  }
+  &__row {
+  }
+  &__col {
+    &--content {
+    }
+    &--media {
+    }
+  }
+  &__content {
+  }
+  &__suptitle {
+    margin: 0 0 var(--vr-1);
+    font-weight: 800;
+    font-size: var(--fs-8);
+    letter-spacing: $lt1;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin: 0 0 var(--vr-1);
+  }
+  &__desctiption {
+    margin: 0 0 var(--vr-2);
+  }
+  &__btn-group {
+    margin: 0 0 var(--vr-3);
+  }
+  &__clients-happy {
+  }
+  &__media {
+  }
+  &__hero {
+    pointer-events: none;
+    user-select: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

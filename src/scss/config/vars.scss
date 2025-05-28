@@ -1,0 +1,94 @@
+$siteResolution: 1px;
+$mainFont: 'Aeion Mono Test';
+$mainWeight: 400;
+$lineHeight1: 1.2;
+$lineHeight2: 1.4;
+$lineHeight3: 1.5;
+$lineHeight4: 1.7;
+$lineHeight5: 1;
+$lineHeightDefault: $lineHeight1;
+$lt1: .05em;
+
+$containerWidthMd: 1296rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$whiteColor: #ffffff;
+$greyColor: #F1F5FF;
+$greyLightColor: #D4D4D4;
+$blackColor: #000000;
+$blueColor: #2F6BFF;
+$blueDarkColor: #141933;
+$blueLightColor: #505672;
+$blueMediumColor: #020336;
+$accentColor: $blueColor;
+
+$bgSite: $greyColor;
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blueDarkColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 64rem;
+  --fs-2: 48rem;
+  --fs-3: 36rem;
+  --fs-4: 24rem;
+  --fs-5: 20rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --fs-8: 12rem;
+  --fs-9: 10rem;
+  --fs-10: 96rem;
+
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --radius-sm: 4rem;
+
+  --vr-1: 16rem;
+  --vr-2: 56rem;
+  --vr-3: 64rem;
+  --vr-4: 8rem;
+  --vr-5: 128rem;
+  --vr-6: 200rem;
+  --vr-7: 100rem;
+  --vr-8: 40rem;
+  --vr-9: 24rem;
+  --vr-10: 96rem;
+
+  --vr-title: var(--vr-1);
+  --vr-subtitle: var(--vr-5);
+  --vr-section-y-1: var(--vr-6);
+  --vr-section-y-2: var(--vr-7);
+
+  --header-height: 140rem;
+  --site--offset: var(--header-height);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+  }
+}

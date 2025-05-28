@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    'title': 'Philipp'
+  })
+  <body>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- intro BEGIN -->
+          <section class="u-section intro">
+            <div class="container container--size-md intro__container">
+              <div class="row intro__row">
+                <div class="row__col--8 intro__col intro__col--content">
+                  <div class="intro__content">
+                    <p class="color-accent intro__suptitle">Duis ac aliquet urna</p>
+                    <h1 class="intro__title">Phasellus sed egetsem pellentesque commodo</h1>
+                    <div class="u-content intro__desctiption">
+                      <p>Phasellus velit turpis, venenatis eu tellus nec, tempor porttitor ipsum. Quisque consectetur iaculis vehicula.</p>
+                    </div>
+                    <div class="btn-group intro__btn-group">
+                      <div class="btn-group__inner">
+                        <div class="btn-group__inner">
+                          <a href="#" class="btn btn--size-md btn--theme-accent-fill header__btn">
+                            <span class="btn__inner">
+                              <span class="btn__title">Schedule a call</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clients-happy intro__clients-happy">
+                      <div class="clients-happy__avatar-list">
+                        <picture class="clients-happy__avatar">
+                          <!-- <source srcset="images/avatar/client-1.webp 1x, images/avatar/client-1@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/avatar/client-1.png"
+                            srcset="images/avatar/client-1.png 1x, images/avatar/client-1@2x.png 2x"
+                            alt="Client avatar 1"
+                            width="56"
+                            height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          <!-- <source srcset="images/avatar/client-2.webp 1x, images/avatar/client-2@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/avatar/client-2.png"
+                            srcset="images/avatar/client-2.png 1x, images/avatar/client-2@2x.png 2x"
+                            alt="Client avatar 2"
+                            width="56"
+                            height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          <!-- <source srcset="images/avatar/client-3.webp 1x, images/avatar/client-3@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/avatar/client-3.png"
+                            srcset="images/avatar/client-3.png 1x, images/avatar/client-3@2x.png 2x"
+                            alt="Client avatar 3"
+                            width="56"
+                            height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          <!-- <source srcset="images/avatar/client-4.webp 1x, images/avatar/client-4@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/avatar/client-4.png"
+                            srcset="images/avatar/client-4.png 1x, images/avatar/client-4@2x.png 2x"
+                            alt="Client avatar 4"
+                            width="56"
+                            height="56">
+                        </picture>
+                      </div>
+                      <div class="clients-happy__content">
+                        <p class="color-accent clients-happy__title">50+ Clients</p>
+                        <p class="clients-happy__text">Quisque consectetur<br>iaculis vehicula</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row__col--4 intro__col intro__col--media">
+                  <div class="intro__media">
+                    <picture class="intro__hero">
+                      <!-- <source srcset="images/intro-hero.webp 1x, images/intro-hero@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/intro-hero.png"
+                        srcset="images/intro-hero.png 1x, images/intro-hero@2x.png 2x"
+                        alt="Phasellus sed egetsem pellentesque commodo"
+                        width="534"
+                        height="800">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- intro END -->
+          <!-- about BEGIN -->
+          <section id="about" class="u-section about">
+            <h2 class="visually-hidden">About</h2>
+            <div class="container container--size-md about__container">
+              <div class="about__list">
+                <article class="about__card">
+                  <div class="about__card-content">
+                    <h3 class="js-counter-countdown fs-2 about__card-title" data-counter-countdown="about-card">102+</h3>
+                    <p class="about__card-text">Prozesse in Konzernen optimiert</p>
+                  </div>
+                </article>
+                <article class="about__card">
+                  <div class="about__card-content">
+                    <h3 class="js-counter-countdown fs-2 about__card-title" data-counter-countdown="about-card">19+</h3>
+                    <p class="about__card-text">Jahre<br>Erfahrung</p>
+                  </div>
+                </article>
+                <article class="about__card">
+                  <div class="about__card-content">
+                    <h3 class="js-counter-countdown fs-2 about__card-title" data-counter-countdown="about-card">20000+</h3>
+                    <p class="about__card-text">Stunden an Prozessen gearbeitet</p>
+                  </div>
+                </article>
+              </div>
+              <div class="about__main">
+                <div class="about__main-title-wrapper">
+                  <h2 class="about__main-title" data-title="Sed tincidunt varius dui, quis euismod arcu cursus quis. Aliquam varius ligula quis dolor pharetra, non elementum mauris rhoncus.">Sed tincidunt varius dui, quis euismod arcu cursus quis. Aliquam varius ligula quis dolor pharetra, non elementum mauris rhoncus.</h2>
+                </div>
+                <picture class="about__hero">
+                  <!-- <source srcset="images/about-hero.webp 1x, images/about-hero@2x.webp 2x" type="image/webp"> -->
+                  <img
+                    src="images/about-hero.png"
+                    srcset="images/about-hero.png 1x, images/about-hero@2x.png 2x"
+                    alt="About"
+                    width="348"
+                    height="338">
+                </picture>
+                <div class="about__services">
+                  <article class="about__services-card">
+                    <h3 class="about__services-card-title">Morbi porttitor <strong>tortor a turpis</strong> condimentum aliquam</h3>
+                  </article>
+                  <article class="about__services-card">
+                    <h3 class="about__services-card-title">Morbi porttitor tortor a turpis <strong>condimentum aliquam</strong></h3>
+                  </article>
+                  <article class="about__services-card">
+                    <h3 class="about__services-card-title"><strong>Morbi porttitor</strong> tortor a turpis condimentum aliquam</h3>
+                  </article>
+                </div>
+              </div>
+              <div class="about__footer">
+                <button type="button" class="js-section-router-btn section-router">
+                  <svg class="u-icon section-router__icon">
+                    <use xlink:href="images/icons/icons.svg#mouse-scroll"></use>
+                  </svg>
+                  <span class="section-router__title">SCROLL</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- about END -->
+          <!-- services BEGIN -->
+          <section id="services" class="u-section u-section--bg-dark services">
+            <div class="container container--size-md services__container">
+              <h2 class="u-title services__title">Nullam vitae interdum arcu non ornare </h2>
+              <h3 class="u-subtitle services__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
+              <div class="row services__row">
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-1.webp 1x, images/services-card-1@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-1.png"
+                            srcset="images/services-card-1.png 1x, images/services-card-1@2x.png 2x"
+                            alt="Unklarheit im Marketing"
+                            width="216"
+                            height="216">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <h3 class="info-card__title">Unklarheit im Marketing</h3>
+                        <div class="u-content info-card__text">
+                          <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-2.webp 1x, images/services-card-2@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-2.png"
+                            srcset="images/services-card-2.png 1x, images/services-card-2@2x.png 2x"
+                            alt="Unklarheit im Marketing"
+                            width="216"
+                            height="216">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <h3 class="info-card__title">Unklarheit im Marketing</h3>
+                        <div class="u-content info-card__text">
+                          <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-3.webp 1x, images/services-card-3@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-3.png"
+                            srcset="images/services-card-3.png 1x, images/services-card-3@2x.png 2x"
+                            alt="Unklarheit im Marketing"
+                            width="216"
+                            height="216">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <h3 class="info-card__title">Unklarheit im Marketing</h3>
+                        <div class="u-content info-card__text">
+                          <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="section-footer services__footer">
+                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                  <span class="btn__inner">
+                    <span class="btn__title">Schedule a call</span>
+                  </span>
+                </a>
+                <div class="clients-happy clients-happy--dir-column clients-happy--border-dark section-footer__clients-happy">
+                  <div class="clients-happy__avatar-list">
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-1.webp 1x, images/avatar/client-1@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-1.png"
+                        srcset="images/avatar/client-1.png 1x, images/avatar/client-1@2x.png 2x"
+                        alt="Client avatar 1"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-2.webp 1x, images/avatar/client-2@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-2.png"
+                        srcset="images/avatar/client-2.png 1x, images/avatar/client-2@2x.png 2x"
+                        alt="Client avatar 2"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-3.webp 1x, images/avatar/client-3@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-3.png"
+                        srcset="images/avatar/client-3.png 1x, images/avatar/client-3@2x.png 2x"
+                        alt="Client avatar 3"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-4.webp 1x, images/avatar/client-4@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-4.png"
+                        srcset="images/avatar/client-4.png 1x, images/avatar/client-4@2x.png 2x"
+                        alt="Client avatar 4"
+                        width="56"
+                        height="56">
+                    </picture>
+                  </div>
+                  <div class="clients-happy__content">
+                    <p class="color-accent clients-happy__title">50+ Clients</p>
+                    <p class="clients-happy__text">Quisque consectetur<br>iaculis vehicula</p>
+                  </div>
+                </div>
+              </div>
+              <picture class="services__logo-brand-3d">
+                <!-- <source srcset="images/logo-brand-3d.webp 1x, images/logo-brand-3d@2x.webp 2x" type="image/webp"> -->
+                <img
+                  src="images/logo-brand-3d.png"
+                  srcset="images/logo-brand-3d.png 1x, images/logo-brand-3d@2x.png 2x"
+                  alt="Nullam vitae interdum arcu non ornare "
+                  width="476"
+                  height="272">
+              </picture>
+            </div>
+          </section>
+          <!-- services END -->
+          <!-- comparison BEGIN -->
+          <section id="comparison" class="u-section u-section--bg-half comparison">
+            <div class="u-section__bg-half">
+              <div class="container container--size-md comparison__container">
+                <h2 class="visually-hidden">Comparison</h2>
+                <div class="row jc-sa comparison__row">
+                  <div class="row__col--4 comparison__row-col">
+                    <article class="info-card comparison__row-card">
+                      <div class="info-card__inner">
+                        <div class="info-card__media">
+                          <picture class="info-card__picture">
+                            <!-- <source srcset="images/comparison-card-1.webp 1x, images/comparison-card-1@2x.webp 2x" type="image/webp"> -->
+                            <img
+                              src="images/comparison-card-1.png"
+                              srcset="images/comparison-card-1.png 1x, images/comparison-card-1@2x.png 2x"
+                              alt="Unklarheit im Marketing"
+                              width="216"
+                              height="216">
+                          </picture>
+                        </div>
+                        <div class="info-card__content">
+                          <h3 class="info-card__title">Unklarheit im Marketing</h3>
+                          <div class="u-content info-card__text">
+                            <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 comparison__row-col">
+                    <article class="info-card comparison__row-card">
+                      <div class="info-card__inner">
+                        <div class="info-card__media">
+                          <picture class="info-card__picture">
+                            <!-- <source srcset="images/comparison-card-2.webp 1x, images/comparison-card-2@2x.webp 2x" type="image/webp"> -->
+                            <img
+                              src="images/comparison-card-2.png"
+                              srcset="images/comparison-card-2.png 1x, images/comparison-card-2@2x.png 2x"
+                              alt="Unklarheit im Marketing"
+                              width="216"
+                              height="216">
+                          </picture>
+                        </div>
+                        <div class="info-card__content">
+                          <h3 class="info-card__title">Unklarheit im Marketing</h3>
+                          <div class="u-content info-card__text">
+                            <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container container--size-md comparison__container-footer">
+              <div class="section-footer comparison__footer">
+                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                  <span class="btn__inner">
+                    <span class="btn__title">Set an appointment</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- comparison END -->
+          <!-- benefits BEGIN -->
+          <section id="benefits" class="u-section benefits">
+            <div class="container container--size-md benefits__container">
+              <picture class="benefits__avatar">
+                <!-- <source srcset="images/decor-1.webp 1x, images/decor-1@2x.webp 2x" type="image/webp"> -->
+                <img
+                  src="images/decor-1.png"
+                  srcset="images/decor-1.png 1x, images/decor-1@2x.png 2x"
+                  alt="Nullam vitae interdum"
+                  width="458"
+                  height="350">
+              </picture>
+              <h2 class="u-title benefits__title">Nullam vitae interdum</h2>
+              <h3 class="u-subtitle benefits__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
+              <div class="row benefits__row">
+                <div class="row__col--6 benefits__row-col">
+                  <article class="benefits-card benefits__row-card">
+                    <div class="benefits-card__inner">
+                      <h3 class="benefits-card__title">Phasellus consectetur rhoncus velit eget</h3>
+                      <div class="u-content benefits-card__content benefits-card__content--negative">
+                        <ul>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--6 benefits__row-col">
+                  <article class="benefits-card benefits__row-card">
+                    <div class="benefits-card__inner">
+                      <h3 class="benefits-card__title">Phasellus consectetur rhoncus velit eget</h3>
+                      <div class="u-content benefits-card__content benefits-card__content--positive">
+                        <ul>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                          <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="section-footer benefits__footer">
+                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                  <span class="btn__inner">
+                    <span class="btn__title">Schedule a call</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- benefits END -->
+          <!-- services BEGIN -->
+          <section id="services" class="u-section u-section--bg-dark services">
+            <div class="container container--size-md services__container">
+              <h2 class="u-title services__title">Nullam vitae interdum arcu non ornare </h2>
+              <h3 class="u-subtitle services__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
+              <div class="row services__row">
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-4.webp 1x, images/services-card-4@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-4.jpg"
+                            srcset="images/services-card-4.jpg 1x, images/services-card-4@2x.jpg 2x"
+                            alt="Consectetur adipiscing"
+                            width="400"
+                            height="312">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <p class="u-title info-card__suptitle">Automation</p>
+                        <h3 class="info-card__title">Consectetur adipiscing</h3>
+                        <div class="u-content info-card__text">
+                          <ul class="u-list u-list--icon-star">
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                          </ul>
+                          <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-5.webp 1x, images/services-card-5@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-5.jpg"
+                            srcset="images/services-card-5.jpg 1x, images/services-card-5@2x.jpg 2x"
+                            alt="Consectetur adipiscing"
+                            width="400"
+                            height="312">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <p class="u-title info-card__suptitle">Automation</p>
+                        <h3 class="info-card__title">Consectetur adipiscing</h3>
+                        <div class="u-content info-card__text">
+                          <ul class="u-list u-list--icon-star">
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                          </ul>
+                          <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 services__row-col">
+                  <article class="info-card services__row-card">
+                    <div class="info-card__inner">
+                      <div class="info-card__media">
+                        <picture class="info-card__picture">
+                          <!-- <source srcset="images/services-card-6.webp 1x, images/services-card-6@2x.webp 2x" type="image/webp"> -->
+                          <img
+                            src="images/services-card-6.jpg"
+                            srcset="images/services-card-6.jpg 1x, images/services-card-6@2x.jpg 2x"
+                            alt="Consectetur adipiscing"
+                            width="400"
+                            height="312">
+                        </picture>
+                      </div>
+                      <div class="info-card__content">
+                        <p class="u-title info-card__suptitle">Automation</p>
+                        <h3 class="info-card__title">Consectetur adipiscing</h3>
+                        <div class="u-content info-card__text">
+                          <ul class="u-list u-list--icon-star">
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                            <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                          </ul>
+                          <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="section-footer services__footer">
+                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                  <span class="btn__inner">
+                    <span class="btn__title">Schedule a call</span>
+                  </span>
+                </a>
+                <div class="clients-happy clients-happy--dir-column clients-happy--border-dark section-footer__clients-happy">
+                  <div class="clients-happy__avatar-list">
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-1.webp 1x, images/avatar/client-1@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-1.png"
+                        srcset="images/avatar/client-1.png 1x, images/avatar/client-1@2x.png 2x"
+                        alt="Client avatar 1"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-2.webp 1x, images/avatar/client-2@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-2.png"
+                        srcset="images/avatar/client-2.png 1x, images/avatar/client-2@2x.png 2x"
+                        alt="Client avatar 2"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-3.webp 1x, images/avatar/client-3@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-3.png"
+                        srcset="images/avatar/client-3.png 1x, images/avatar/client-3@2x.png 2x"
+                        alt="Client avatar 3"
+                        width="56"
+                        height="56">
+                    </picture>
+                    <picture class="clients-happy__avatar">
+                      <!-- <source srcset="images/avatar/client-4.webp 1x, images/avatar/client-4@2x.webp 2x" type="image/webp"> -->
+                      <img
+                        src="images/avatar/client-4.png"
+                        srcset="images/avatar/client-4.png 1x, images/avatar/client-4@2x.png 2x"
+                        alt="Client avatar 4"
+                        width="56"
+                        height="56">
+                    </picture>
+                  </div>
+                  <div class="clients-happy__content">
+                    <p class="color-accent clients-happy__title">50+ Clients</p>
+                    <p class="clients-happy__text">Quisque consectetur<br>iaculis vehicula</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

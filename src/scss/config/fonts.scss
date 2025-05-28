@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Aeion Mono Test';
+  src: url('../fonts/AeionMono-Regular.woff2') format('woff2'),
+       url('../fonts/AeionMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeion Mono Test';
+  src: url('../fonts/AeionMono-Light.woff2') format('woff2'),
+       url('../fonts/AeionMono-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeion Mono Test';
+  src: url('../fonts/AeionMono-SemiBold.woff2') format('woff2'),
+       url('../fonts/AeionMono-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeion Mono Test';
+  src: url('../fonts/AeionMono-Bold.woff2') format('woff2'),
+       url('../fonts/AeionMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeion Mono Test';
+  src: url('../fonts/AeionMono-ExtraBold.woff2') format('woff2'),
+       url('../fonts/AeionMono-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
