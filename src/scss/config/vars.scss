@@ -28,6 +28,11 @@ $accentColor: $blueColor;
 
 $bgSite: $greyColor;
 
+$gradientGreyRadial1: radial-gradient(53.62% 53.62% at 50% 50%, rgba($greyColor, 0) 0%, $greyColor 100%);
+$gradientGreyRadial2: radial-gradient(50% 50% at 50% 50%, rgba($greyColor, 0) 60.58%, $greyColor 100%);
+$gradientGrey1: linear-gradient(90deg, rgba($greyColor, 0) 50%, $greyColor 100%);
+$gradientBlueBlack1: radial-gradient(50% 50% at 50% 50%, rgba($blueMediumColor, 0) 50%, $blueMediumColor 100%);
+
 $fontFamily: $mainFont, Open Sans, sans-serif, Arial;
 $fontColor: $blueDarkColor;
 $fontWeight: $mainWeight;
@@ -71,22 +76,26 @@ $xs-mf: $xs + 1;
 
   --radius-sm: 4rem;
 
-  --vr-1: 16rem;
+  --vr-1: 24rem;
   --vr-2: 56rem;
   --vr-3: 64rem;
   --vr-4: 8rem;
   --vr-5: 128rem;
   --vr-6: 200rem;
   --vr-7: 100rem;
-  --vr-8: 40rem;
-  --vr-9: 24rem;
+  --vr-8: 44rem;
+  --vr-9: 22rem;
   --vr-10: 96rem;
   --vr-11: 48rem;
+  --vr-12: 12rem;
+  --vr-13: 24rem;
+  --vr-14: 72rem;
 
-  --vr-title: var(--vr-1);
-  --vr-subtitle: var(--vr-5);
+  --vr-title: 13rem;
+  --vr-subtitle: 123rem;
   --vr-section-y-1: var(--vr-6);
   --vr-section-y-2: var(--vr-7);
+  --vr-slider-control: var(--vr-10);
 
   --header-height: 140rem;
   --site--offset: var(--header-height);

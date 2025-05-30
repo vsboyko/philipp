@@ -1,4 +1,6 @@
 .portfolio {
+  padding-top: var(--vr-section-y-1);
+  padding-bottom: var(--vr-section-y-1);
   &__container {
   }
   &__title {
@@ -12,5 +14,25 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+  &__slider {
+    position: relative;
+    .swiper-button {
+      top: initial;
+      bottom: 152rem;
+      &-prev {
+        right: initial;
+        left: 64px;
+      }
+      &-next {
+        right: initial;
+        left: 104px;
+      }
+    }
+    .slider-control {
+      position: static;
+    }
+  }
+  &__footer {
   }
 }

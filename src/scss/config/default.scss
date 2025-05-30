@@ -13,6 +13,8 @@ body {
 
 body {
   background: $bgSite;
+  // background: url(../images/proba.jpg) center -49px no-repeat;
+  // opacity: .4;
   font-style: normal;
   font-weight: $mainWeight;
   font-size: var(--fs-default);
@@ -169,5 +171,8 @@ svg,
   }
   &-accent {
     color: $accentColor;
+  }
+  &-blue-light {
+    color: $blueLightColor;
   }
 }

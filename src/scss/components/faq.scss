@@ -1,4 +1,5 @@
 .faq {
+  padding: var(--vr-section-y-1) 0;
   &__container {
   }
   &__title {
@@ -17,7 +18,6 @@
     &-card {
       border-bottom: 1px solid $blueDarkColor;
       &:not(:last-child) {
-        margin-bottom: var(--gap-container);
       }
     }
   }

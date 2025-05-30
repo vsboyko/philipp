@@ -23,6 +23,35 @@ document.addEventListener('DOMContentLoaded', function() {
   // header nav mobile toggle
   new HeaderBtnToggle();
 
+  // sliders swiper init
+  SliderInit('.js-slider-services-init', {
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+  }, {
+    onlyMobile: true
+  });
+
+  SliderInit('.js-slider-portfolio-init', {
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+  });
+
+  SliderInit('.js-slider-reviews-init', {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 0,
+  });
+
+  SliderInit('.js-slider-goods-init', {
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+  }, {
+    onlyMobile: false
+  });
+
   // modal init
   new PopupManager();
 

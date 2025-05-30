@@ -1,4 +1,6 @@
 .intro {
+  padding: var(--vr-section-y-2) 0 var(--vr-section-y-1);
+  position: relative;
   &__container {
   }
   &__row {
@@ -7,9 +9,11 @@
     &--content {
     }
     &--media {
+      align-self: flex-end;
     }
   }
   &__content {
+    padding-top: 100rem;
   }
   &__suptitle {
     margin: 0 0 var(--vr-1);
@@ -19,10 +23,14 @@
     text-transform: uppercase;
   }
   &__title {
-    margin: 0 0 var(--vr-1);
+    margin: 0 0 var(--vr-12);
   }
   &__desctiption {
+    max-width: 660rem;
     margin: 0 0 var(--vr-2);
+    @media (max-width: $sm) {
+      max-width: 100%;
+    }
   }
   &__btn-group {
     margin: 0 0 var(--vr-3);
@@ -30,10 +38,13 @@
   &__clients-happy {
   }
   &__media {
-  }
-  &__hero {
+    margin: 0 -36rem calc(-1 * var(--vr-section-y-2)) -98rem;
     pointer-events: none;
     user-select: none;
+  }
+  &__hero {
+    max-width: 534rem;
+    margin-left: auto;
     img {
       width: 100%;
       height: auto;

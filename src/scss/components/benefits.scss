@@ -1,10 +1,51 @@
 .benefits {
+  padding-bottom: var(--vr-section-y-1);
   &__container {
+    position: relative;
+  }
+  &__decor {
+    width: 100%;
+    max-width: 458rem;
+    position: absolute;
+    top: 92rem;
+    left: -278rem;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__schema-bg {
+    width: 814rem;
+    position: absolute;
+    right: -74rem;
+    bottom: -150rem;
+    pointer-events: none;
+    user-select: none;
+    z-index: -2;
+    &:before {
+      background: $gradientGreyRadial2;
+      z-index: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
   }
   &__title {
+    max-width: 800rem;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
   }
   &__subtitle {
+    max-width: 800rem;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
   }
   &__row {

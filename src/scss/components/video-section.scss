@@ -1,4 +1,5 @@
-.portfolio {
+.video-section {
+  padding: var(--vr-section-y-1) 0;
   &__container {
   }
   &__title {
@@ -12,5 +13,9 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+  &__el {
+  }
+  &__footer {
   }
 }

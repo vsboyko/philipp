@@ -1,4 +1,5 @@
 .about {
+  padding-top: 0;
   overflow: hidden;
   &__container {
   }
@@ -45,7 +46,7 @@
   &__main {
     width: 100%;
     max-width: 348rem;
-    margin: 364rem auto 280rem;
+    margin: 364rem auto 284rem;
     position: relative;
     &-title-wrapper {
       width: 100vw;
@@ -55,7 +56,7 @@
       transform: translate(-50%, -50%);
       z-index: -2;
       &:before {
-        background: radial-gradient(53.62% 53.62% at 50% 50%, rgba(241, 245, 255, 0) 0%, #F1F5FF 100%);
+        background: $gradientGreyRadial1;
         width: 100%;
         height: 100%;
         content: '';
@@ -75,7 +76,6 @@
       &:before,
       &:after {
         width: 100%;
-        height: 100%;
         display: flex;
         content: attr(data-title);
         flex-direction: column;
@@ -84,6 +84,7 @@
         text-align: center;
         position: absolute;
         top: 0;
+        bottom: 0;
       }
       &:before {
         background: radial-gradient(53.62% 53.62% at 50% 50%, rgba(241, 245, 255, 0) 0%, #F1F5FF 100%);
@@ -112,45 +113,48 @@
     }
   }
   &__services {
+    counter-reset: aboutCounter;
     &-card {
       background: rgba($blueLightColor, .1);
       backdrop-filter: blur(18px);
       width: 312rem;
       padding: 32rem 24rem;
       display: flex;
+      counter-increment: aboutCounter;
       border: 1px solid rgba($blueLightColor, .1);
       border-radius: var(--radius-sm);
       text-transform: uppercase;
       position: absolute;
       z-index: 2;
       &:nth-child(1) {
-        top: 0;
-        left: -40%;
+        top: -19%;
+        left: -64.5%;
         z-index: 0;
       }
       &:nth-child(2) {
-        top: 20%;
-        left: 80%;
+        top: 31%;
+        left: 87%;
       }
       &:nth-child(3) {
-        top: 82%;
-        left: -60%;
+        top: 77.1%;
+        left: -54.7%;
       }
       &:before {
-        content: '';
-        margin: 0 4rem 0 0;
-        flex: 0 0 24rem;
+        content: counter(aboutCounter);
+        margin: 0 3rem 0 0;
+        flex: 0 0 20rem;
       }
       &-title {
         margin: 0;
         font-weight: normal;
         font-size: var(--fs-default);
+        line-height: $lineHeight2;
         text-transform: uppercase;
       }
     }
   }
   &__footer {
-    padding-bottom: 140rem;
+    padding-bottom: 100rem;
     display: flex;
     justify-content: center;
   }

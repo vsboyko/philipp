@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20250530114751">
-  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#f02121">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250530223422">
+  <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#f02121">
-  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#f02121">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="PHILIPP LÜTJE">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#2F6BFF">
+  <meta name="theme-color" content="#2F6BFF">
   <title>Philipp</title>
 </head>
   <body>
@@ -44,7 +43,7 @@
           </ul>
         </nav>
       </div>
-      <a href="#" class="btn btn--size-md btn--theme-accent-fill header__btn">
+      <a href="#" class="btn btn--theme-accent-fill header__btn btn--size-md">
         <span class="btn__inner">
           <span class="btn__title">Set an Appointment</span>
         </span>
@@ -55,7 +54,11 @@
         
         <main role="main" class="site__main">
           
-          <section class="u-section intro">
+          <section class="intro">
+            <picture class="bg-gradient schema-bg schema-bg--size-full intro__bg">
+              
+              <img src="images/schema-bg-1.png" srcset="images/schema-bg-1.png, images/schema-bg-1@2x.png 2x" alt="Duis ac aliquet urna" width="1920" height="1008">
+            </picture>
             <div class="container container--size-md intro__container">
               <div class="row intro__row">
                 <div class="intro__col intro__col--content row__col--8">
@@ -68,7 +71,7 @@
                     <div class="btn-group intro__btn-group">
                       <div class="btn-group__inner">
                         <div class="btn-group__inner">
-                          <a href="#" class="btn btn--size-md btn--theme-accent-fill header__btn">
+                          <a href="#" class="btn btn--size-semi btn--theme-accent-fill header__btn">
                             <span class="btn__inner">
                               <span class="btn__title">Schedule a call</span>
                             </span>
@@ -174,35 +177,29 @@
             <div class="container container--size-md services__container">
               <h2 class="u-title services__title">Nullam vitae interdum arcu non ornare</h2>
               <h3 class="u-subtitle services__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
-              <div class="u-slider services__slider">
+              <div class="u-slider services__slider u-slider--active-mobile">
                 <div class="js-slider-init swiper js-slider-services-init">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
-                          <div class="info-card__hero">
-                            <picture class="info-card__picture info-card__picture--size-fluid">
+                          <div class="info-card__media">
+                            <picture class="info-card__picture">
                               
-                              <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
+                              <img src="images/services-card-1.png" srcset="images/services-card-1.png, images/services-card-1@2x.png 2x" alt="Consectetur adipiscing" width="216" height="216">
                             </picture>
                           </div>
                           <div class="info-card__content">
-                            <p class="u-title color-accent info-card__suptitle">Automation</p>
-                            <h3 class="info-card__title">Consectetur adipiscing</h3>
+                            <h3 class="info-card__title">Unklarheit im Marketing</h3>
                             <div class="u-content info-card__text">
-                              <ul class="u-list u-list--icon-star">
-                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
-                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
-                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
-                              </ul>
-                              <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                              <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
                             </div>
                           </div>
                         </div>
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__media">
                             <picture class="info-card__picture">
@@ -220,7 +217,7 @@
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__media">
                             <picture class="info-card__picture">
@@ -241,12 +238,12 @@
                 </div>
               </div>
               <div class="section-footer services__footer">
-                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                <a href="#" class="btn btn--size-semi btn--theme-accent-fill section-footer__btn">
                   <span class="btn__inner">
                     <span class="btn__title">Schedule a call</span>
                   </span>
                 </a>
-                <div class="clients-happy clients-happy--dir-column section-footer__clients-happy clients-happy--border-dark">
+                <div class="clients-happy clients-happy--border-dark clients-happy--dir-column section-footer__clients-happy">
                   <div class="clients-happy__avatar-list">
                     <picture class="clients-happy__avatar">
                       
@@ -286,6 +283,9 @@
                 <div class="row jc-sa comparison__row">
                   <div class="row__col--4 comparison__row-col comparison__row-col--card">
                     <article class="info-card comparison__row-card">
+                      <picture class="bg-gradient info-card__schema-bg">
+                        <img src="images/schema-bg-2.png" alt="" width="624" height="1036">
+                      </picture>
                       <div class="info-card__inner">
                         <div class="info-card__media">
                           <picture class="info-card__picture">
@@ -304,6 +304,9 @@
                   </div>
                   <div class="row__col--4 comparison__row-col comparison__row-col--card">
                     <article class="info-card comparison__row-card">
+                      <picture class="bg-gradient info-card__schema-bg bg-gradient--theme-blue-black">
+                        <img src="images/schema-bg-4.png" alt="" width="624" height="1036">
+                      </picture>
                       <div class="info-card__inner">
                         <div class="info-card__media">
                           <picture class="info-card__picture">
@@ -325,7 +328,7 @@
             </div>
             <div class="container container--size-md comparison__container-footer">
               <div class="section-footer comparison__footer">
-                <a href="#" class="btn btn--size-md section-footer__btn btn--theme-blue-black-fill">
+                <a href="#" class="btn btn--size-semi section-footer__btn btn--theme-blue-black-fill">
                   <span class="btn__inner">
                     <span class="btn__title">Set an appointment</span>
                   </span>
@@ -337,9 +340,12 @@
           
           <section id="benefits" class="u-section benefits">
             <div class="container container--size-md benefits__container">
-              <picture class="benefits__avatar">
+              <picture class="benefits__decor">
                 
                 <img src="images/decor-1.png" srcset="images/decor-1.png, images/decor-1@2x.png 2x" alt="Nullam vitae interdum" width="458" height="350">
+              </picture>
+              <picture class="bg-gradient benefits__schema-bg">
+                <img src="images/schema-bg-3.png" alt="" width="814" height="756">
               </picture>
               <h2 class="u-title benefits__title">Nullam vitae interdum</h2>
               <h3 class="u-subtitle benefits__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
@@ -348,7 +354,7 @@
                   <article class="benefits-card benefits__row-card">
                     <div class="benefits-card__inner">
                       <h3 class="benefits-card__title">Phasellus consectetur rhoncus velit eget</h3>
-                      <div class="u-content benefits-card__content benefits-card__content--negative">
+                      <div class="u-content benefits-card__content u-content--negative">
                         <ul>
                           <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
                           <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
@@ -364,7 +370,7 @@
                   <article class="benefits-card benefits__row-card">
                     <div class="benefits-card__inner">
                       <h3 class="benefits-card__title">Phasellus consectetur rhoncus velit eget</h3>
-                      <div class="u-content benefits-card__content benefits-card__content--positive">
+                      <div class="u-content u-content--positive benefits-card__content">
                         <ul>
                           <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
                           <li>Vivamus ornare, dolor ut dapibus molestie, risus elit pretium tellus, eu accumsan quam odio sit amet justo.</li>
@@ -378,7 +384,7 @@
                 </div>
               </div>
               <div class="section-footer benefits__footer">
-                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                <a href="#" class="btn btn--size-semi btn--theme-accent-fill section-footer__btn">
                   <span class="btn__inner">
                     <span class="btn__title">Schedule a call</span>
                   </span>
@@ -396,7 +402,55 @@
                 <div class="js-slider-init swiper js-slider-portfolio-init">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
+                        <div class="info-card__inner">
+                          <div class="info-card__hero">
+                            <picture class="info-card__picture info-card__picture--size-fluid">
+                              
+                              <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
+                            </picture>
+                          </div>
+                          <div class="info-card__content">
+                            <p class="u-title color-accent info-card__suptitle">Automation</p>
+                            <h3 class="info-card__title">Consectetur adipiscing</h3>
+                            <div class="u-content info-card__text u-content--positive">
+                              <ul>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                              </ul>
+                              <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
+                      <article class="u-slider__card info-card">
+                        <div class="info-card__inner">
+                          <div class="info-card__hero">
+                            <picture class="info-card__picture info-card__picture--size-fluid">
+                              
+                              <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
+                            </picture>
+                          </div>
+                          <div class="info-card__content">
+                            <p class="u-title color-accent info-card__suptitle">Automation</p>
+                            <h3 class="info-card__title">Consectetur adipiscing</h3>
+                            <div class="u-content info-card__text u-content--positive">
+                              <ul>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                              </ul>
+                              <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
@@ -420,7 +474,7 @@
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
@@ -444,7 +498,55 @@
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
+                        <div class="info-card__inner">
+                          <div class="info-card__hero">
+                            <picture class="info-card__picture info-card__picture--size-fluid">
+                              
+                              <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
+                            </picture>
+                          </div>
+                          <div class="info-card__content">
+                            <p class="u-title color-accent info-card__suptitle">Automation</p>
+                            <h3 class="info-card__title">Consectetur adipiscing</h3>
+                            <div class="u-content info-card__text">
+                              <ul class="u-list u-list--icon-star">
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                              </ul>
+                              <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
+                      <article class="u-slider__card info-card">
+                        <div class="info-card__inner">
+                          <div class="info-card__hero">
+                            <picture class="info-card__picture info-card__picture--size-fluid">
+                              
+                              <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
+                            </picture>
+                          </div>
+                          <div class="info-card__content">
+                            <p class="u-title color-accent info-card__suptitle">Automation</p>
+                            <h3 class="info-card__title">Consectetur adipiscing</h3>
+                            <div class="u-content info-card__text">
+                              <ul class="u-list u-list--icon-star">
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                                <li>+40% rhoncus nisl at nibh tempus fermentum</li>
+                              </ul>
+                              <p>Vestibulum id semper nisl, venenatis ornare est. Quisque dolor purus, rutrum non turpis vitae, cursus rhoncus sem. Morbi quis tristique arcu, ac auctor est.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
@@ -468,28 +570,28 @@
                       </article>
                     </div>
                   </div>
-                </div>
-                <div class="slider-control u-slider__control">
-                  <button type="button" class="slider-control__btn swiper-button js-slider-btn-prev swiper-button-prev swiper-button--position-right">
-                    <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                    </svg>
-                  </button>
-                  <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
-                  <button type="button" class="slider-control__btn swiper-button js-slider-btn-next swiper-button-next swiper-button--position-right">
-                    <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                    </svg>
-                  </button>
+                  <div class="slider-control u-slider__control">
+                    <button type="button" class="slider-control__btn swiper-button js-slider-btn-prev swiper-button-prev swiper-button--position-right">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
+                    <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
+                    <button type="button" class="slider-control__btn swiper-button js-slider-btn-next swiper-button-next swiper-button--position-right">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="section-footer portfolio__footer">
-                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                <a href="#" class="btn btn--size-semi btn--theme-accent-fill section-footer__btn">
                   <span class="btn__inner">
                     <span class="btn__title">Schedule a call</span>
                   </span>
                 </a>
-                <div class="clients-happy clients-happy--dir-column section-footer__clients-happy clients-happy--border-dark">
+                <div class="clients-happy clients-happy--border-dark clients-happy--dir-column section-footer__clients-happy">
                   <div class="clients-happy__avatar-list">
                     <picture class="clients-happy__avatar">
                       
@@ -546,7 +648,7 @@
               </div>
               <h2 class="u-title clients__title">Nullam vitae interdum</h2>
               <h3 class="u-subtitle clients__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
-              <div class="clients__marquee-wrapper">
+              <div class="clients__marquee-list">
                 <div class="clients__marquee u-marquee">
                   <div class="u-marquee__row">
                     <div class="u-marquee__col">
@@ -600,61 +702,6 @@
                         <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
                       </picture>
                     </div>
-                  </div>
-                  <div class="u-marquee__row">
-                    <div class="u-marquee__col">
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
-                      </picture>
-                    </div>
-                    <div class="u-marquee__col">
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
-                      </picture>
-                    </div>
-                    <div class="u-marquee__col">
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        
-                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
-                      </picture>
-                      <picture class="u-marquee__clients-logo">
-                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
-                      </picture>
-                    </div>
-                  </div>
-                  <div class="u-marquee__row">
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
                         
@@ -708,11 +755,226 @@
                     </div>
                   </div>
                 </div>
+                <div class="clients__marquee u-marquee">
+                  <div class="u-marquee__row">
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="clients__marquee u-marquee">
+                  <div class="u-marquee__row">
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="80">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                    <div class="u-marquee__col">
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="80">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        
+                        <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
+                      </picture>
+                      <picture class="u-marquee__clients-logo">
+                        <img src="images/client-logo-4.svg" alt="Client avatar 4" width="94" height="16">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="clients__author">
                 <div class="row clients__author-row">
                   <div class="row__col--5 clients__author-col clients__author-col--media">
                     <div class="clients__author-media">
+                      <picture class="bg-gradient schema-bg schema-bg--size-full clients__schema-bg">
+                        <img src="images/schema-bg-3.png" alt="" width="814" height="756">
+                      </picture>
                       <picture class="clients__author-hero">
                         
                         <img src="images/clients-hero.png" srcset="images/clients-hero.png, images/clients-hero@2x.png 2x" alt="Kate Stewart" width="386" height="668">
@@ -738,7 +1000,7 @@
           </section>
           
           
-          <section id="info" class="u-section u-section--bg-blue-bluesky-half info">
+          <section id="info" class="u-section info u-section--bg-blue-bluesky-half">
             <div class="u-section__bg-half">
               <div class="container container--size-md info__container">
                 <div class="row jc-sa info__row">
@@ -748,7 +1010,7 @@
                       <div class="u-content info__text">
                         <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
                       </div>
-                      <a href="#" class="btn btn--size-md btn--theme-accent-fill info__btn">
+                      <a href="#" class="btn btn--size-semi btn--theme-accent-fill info__btn">
                         <span class="btn__inner">
                           <span class="btn__title">Schedule a call</span>
                         </span>
@@ -756,10 +1018,16 @@
                     </div>
                   </div>
                   <div class="row__col--5 info__row-col info__row-col--media">
-                    <picture class="info__hero">
-                      
-                      <img src="images/info-hero.png" srcset="images/info-hero.png, images/info-hero@2x.png 2x" alt="Unklarheit im Marketing" width="422" height="802">
-                    </picture>
+                    <div class="info__media">
+                      <picture class="info__media-bg-pattern">
+                        
+                        <img src="images/pattern-1.png" srcset="images/pattern-1.png, images/pattern-1@2x.png 2x" alt="" width="720" height="720">
+                      </picture>
+                      <picture class="info__hero">
+                        
+                        <img src="images/info-hero.png" srcset="images/info-hero.png, images/info-hero@2x.png 2x" alt="Unklarheit im Marketing" width="422" height="802">
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -794,7 +1062,7 @@
                             <div class="reviews-card__hero">
                               <picture class="reviews-card__picture">
                                 
-                                <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="455">
+                                <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
                               </picture>
                             </div>
                           </div>
@@ -821,7 +1089,34 @@
                             <div class="reviews-card__hero">
                               <picture class="reviews-card__picture">
                                 
-                                <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="455">
+                                <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
+                              </picture>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="swiper-slide u-slider__slide u-slider__slide--size-12">
+                      <article class="u-slider__card reviews-card">
+                        <div class="row reviews-card__row">
+                          <div class="reviews-card__col reviews-card__col--content row__col--7">
+                            <div class="reviews-card__content">
+                              <div class="u-content reviews-card__text">
+                                <blockquote>
+                                  <p>Lorem ipsum</p>
+                                  <footer>
+                                    <strong>Kate Stewart 2</strong>
+                                    <cite>Banking soft inc.</cite>
+                                  </footer>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row__col--5 reviews-card__col reviews-card__col--media">
+                            <div class="reviews-card__hero">
+                              <picture class="reviews-card__picture">
+                                
+                                <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
                               </picture>
                             </div>
                           </div>
@@ -831,21 +1126,21 @@
                   </div>
                 </div>
                 <div class="slider-control u-slider__control">
-                  <button type="button" class="slider-control__btn swiper-button d-sm-block swiper-button--position-reviews-slider js-slider-btn-prev swiper-button-prev">
+                  <button type="button" class="slider-control__btn swiper-button js-slider-btn-prev swiper-button-prev swiper-button--position-reviews-slider">
                     <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                     </svg>
                   </button>
                   <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
-                  <button type="button" class="slider-control__btn swiper-button d-sm-block swiper-button--position-reviews-slider js-slider-btn-next swiper-button-next">
+                  <button type="button" class="slider-control__btn swiper-button js-slider-btn-next swiper-button-next swiper-button--position-reviews-slider">
                     <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                     </svg>
                   </button>
                 </div>
               </div>
               <div class="section-footer reviews__footer">
-                <a href="#" class="btn btn--size-md section-footer__btn btn--theme-black-outline">
+                <a href="#" class="btn btn--size-semi section-footer__btn btn--theme-black-outline">
                   <span class="btn__inner">
                     <span class="btn__title">Set an Appointment</span>
                   </span>
@@ -859,11 +1154,11 @@
             <div class="container container--size-md services__container">
               <h2 class="u-title services__title">Nullam vitae interdum arcu non ornare</h2>
               <h3 class="u-subtitle services__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
-              <div class="u-slider services__slider">
-                <div class="js-slider-init swiper js-slider-services-init">
+              <div class="u-slider services__slider u-slider--active-mobile">
+                <div class="js-slider-init swiper js-slider-goods-init">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
@@ -881,7 +1176,7 @@
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
@@ -899,7 +1194,7 @@
                       </article>
                     </div>
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-4">
-                      <article class="info-card u-slider__card">
+                      <article class="u-slider__card info-card">
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
@@ -920,7 +1215,7 @@
                 </div>
               </div>
               <div class="section-footer services__footer">
-                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                <a href="#" class="btn btn--size-semi btn--theme-accent-fill section-footer__btn">
                   <span class="btn__inner">
                     <span class="btn__title">Schedule a call</span>
                   </span>
@@ -946,7 +1241,7 @@
                 </button>
               </div>
               <div class="section-footer video-section__footer">
-                <a href="#" class="btn btn--size-md section-footer__btn btn--theme-black-outline">
+                <a href="#" class="btn btn--size-semi section-footer__btn btn--theme-black-outline">
                   <span class="btn__inner">
                     <span class="btn__title">Set an Appointment</span>
                   </span>
@@ -980,48 +1275,48 @@
           </section>
           
           
-          <section id="specialty" class="u-section u-section--bg-blue-bluesky-half specialty">
-            <div class="u-section__bg-half">
-              <div class="container container--size-md specialty__container">
-                <div class="row jc-sa specialty__row">
-                  <div class="row__col--5 specialty__row-col specialty__row-col--content">
-                    <div class="specialty__content">
-                      <h2 class="fs-3 specialty__title">Unklarheit im Marketing</h2>
-                      <div class="u-content specialty__text">
-                        <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+          <section id="specialty" class="u-section u-section--bg-dark specialty">
+            <div class="container container--size-md specialty__container">
+              <div class="row jc-sa specialty__row">
+                <div class="row__col--6 specialty__col specialty__col--content">
+                  <div class="specialty__content">
+                    <h2 class="fs-3 specialty__title">Unklarheit im Marketing</h2>
+                    <div class="u-content specialty__text">
+                      <p>Es kommen viele Leads rein, aber es ist schwer, die guten von den schlechten zu unterscheiden. Das CRM gibt nicht genug Aufschluss darüber, welche Marketing-Aktionen wirklich etwas bringen. Das führt dazu, dass Zeit und Geld ineffizient eingesetzt werden.</p>
+                    </div>
+                    <a href="#" class="btn btn--size-semi btn--theme-accent-fill specialty__btn">
+                      <span class="btn__inner">
+                        <span class="btn__title">Schedule a call</span>
+                      </span>
+                    </a>
+                    <div class="clients-happy clients-happy--border-dark specialty__happy">
+                      <div class="clients-happy__avatar-list">
+                        <picture class="clients-happy__avatar">
+                          
+                          <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          
+                          <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          
+                          <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
+                        </picture>
+                        <picture class="clients-happy__avatar">
+                          
+                          <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
+                        </picture>
                       </div>
-                      <a href="#" class="btn btn--size-md btn--theme-accent-fill specialty__btn">
-                        <span class="btn__inner">
-                          <span class="btn__title">Schedule a call</span>
-                        </span>
-                      </a>
-                      <div class="clients-happy specialty__happy">
-                        <div class="clients-happy__avatar-list">
-                          <picture class="clients-happy__avatar">
-                            
-                            <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
-                          </picture>
-                          <picture class="clients-happy__avatar">
-                            
-                            <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
-                          </picture>
-                          <picture class="clients-happy__avatar">
-                            
-                            <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
-                          </picture>
-                          <picture class="clients-happy__avatar">
-                            
-                            <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
-                          </picture>
-                        </div>
-                        <div class="clients-happy__content">
-                          <p class="color-accent clients-happy__title">50+ Clients</p>
-                          <p class="clients-happy__text">Quisque consectetur<br>iaculis vehicula</p>
-                        </div>
+                      <div class="clients-happy__content">
+                        <p class="color-accent clients-happy__title">50+ Clients</p>
+                        <p class="clients-happy__text">Quisque consectetur<br>iaculis vehicula</p>
                       </div>
                     </div>
                   </div>
-                  <div class="row__col--5 specialty__row-col specialty__row-col--media">
+                </div>
+                <div class="row__col--5 specialty__col specialty__col--media">
+                  <div class="specialty__media">
                     <picture class="specialty__hero">
                       
                       <img src="images/specialty-hero.png" srcset="images/specialty-hero.png, images/specialty-hero@2x.png 2x" alt="Unklarheit im Marketing" width="544" height="1186">
@@ -1135,7 +1430,7 @@
                 </article>
               </div>
               <div class="section-footer faq__footer">
-                <a href="#" class="btn btn--size-md btn--theme-accent-fill section-footer__btn">
+                <a href="#" class="btn btn--size-semi btn--theme-accent-fill section-footer__btn">
                   <span class="btn__inner">
                     <span class="btn__title">Set an Appointment</span>
                   </span>
@@ -1162,9 +1457,9 @@
         </div>
       </div>
       <div class="footer__col row__col">
-        <p class="u-title footer__title fs-5">UnternehmerPlus® GmbH</p>
+        <p class="u-title footer__title fs-5">Mehr</p>
         <div class="footer__content">
-          <nav class="footer__nav">
+          <nav class="footer__nav" role="navigation">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
                 <a href="#" class="js-anchor footer__nav-link">Start</a>
@@ -1219,6 +1514,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js??=v=20250530114751"></script>
+    <script src="js/app.min.js??=v=20250530223422"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
-.portfolio {
+.reviews {
+  padding: var(--vr-section-y-1) 0;
   &__container {
   }
   &__title {
@@ -12,5 +13,12 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+  &__slider {
+    .slider-control {
+      margin-top: var(--vr-14);
+    }
+  }
+  &__footer {
   }
 }

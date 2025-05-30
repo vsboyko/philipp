@@ -47,6 +47,7 @@
       &:hover {
         text-decoration: none;
         @media (min-width: $lg-mf) {
+          color: $accentColor;
         }
       }
     }
