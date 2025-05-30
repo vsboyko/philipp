@@ -15,6 +15,7 @@
 @import 'config/default';
 
 /** Libraries */
+@import 'libs/swiper';
 
 /** Common parameters, templates, and utility classes */
 @import 'config/media';
@@ -30,5 +31,12 @@
 @import 'components/services';
 @import 'components/comparison';
 @import 'components/benefits';
+@import 'components/portfolio';
+@import 'components/clients';
+@import 'components/info';
+@import 'components/reviews';
+@import 'components/video-section';
+@import 'components/specialty';
+@import 'components/faq';
 
 /** Inclusion of styles for individual blocks and sections */

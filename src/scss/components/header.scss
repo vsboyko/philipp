@@ -41,6 +41,7 @@
       padding: 0;
     }
     &-link {
+      @extend %area-click;
       text-transform: uppercase;
       transition: $transition;
       &:hover {

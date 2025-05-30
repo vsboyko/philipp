@@ -10,7 +10,9 @@
 import BaseHelpers from './helpers/BaseHelpers.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import PopupManager from './modules/PopupManager.js';
-
+import SliderInit from './modules/SliderInit.js';
+import FaqCard from './modules/FaqCard.js';
+import VideoPlayer from './modules/VideoPlayer.js';
 
 // check webp/loaded page/device type
 BaseHelpers.checkWebpSupport();
@@ -20,6 +22,13 @@ BaseHelpers.addLoadedClass();
 document.addEventListener('DOMContentLoaded', function() {
   // header nav mobile toggle
   new HeaderBtnToggle();
+
   // modal init
   new PopupManager();
+
+  // faq card
+  new FaqCard();
+
+  // video playey play/pause
+  VideoPlayer();
 });

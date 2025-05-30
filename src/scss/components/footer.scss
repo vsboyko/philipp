@@ -1,2 +1,51 @@
 .footer {
+  padding: 72rem 0 90rem;
+  border-top: 1px solid $blueDarkColor;
+  color: $blueLightColor;
+  line-height: $lineHeight4;
+  &__container {
+  }
+  &__row {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  &__col {
+    max-width: 33.33%;
+  }
+  &__title {
+    margin: 0 0 24rem;
+    font-weight: bold;
+    color: $blueDarkColor;
+    text-transform: none;
+  }
+  &__content {
+    a {
+      color: inherit;
+    }
+  }
+  &__nav {
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 16rem;
+      }
+    }
+    &-link {
+      @extend %area-click;
+      transition: $transition;
+      transition-property: color;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $accentColor;
+        }
+      }
+    }
+  }
 }

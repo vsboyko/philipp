@@ -22,6 +22,8 @@ $blueColor: #2F6BFF;
 $blueDarkColor: #141933;
 $blueLightColor: #505672;
 $blueMediumColor: #020336;
+$blueBlackColor: #0C0C45;
+$blueSkyColor: #9ACEFF;
 $accentColor: $blueColor;
 
 $bgSite: $greyColor;
@@ -79,6 +81,7 @@ $xs-mf: $xs + 1;
   --vr-8: 40rem;
   --vr-9: 24rem;
   --vr-10: 96rem;
+  --vr-11: 48rem;
 
   --vr-title: var(--vr-1);
   --vr-subtitle: var(--vr-5);
