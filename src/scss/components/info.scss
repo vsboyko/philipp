@@ -1,4 +1,12 @@
 .info {
+  @media (max-width: $sm) {
+    background: $blueMediumColor;
+  }
+  .u-section__bg-half {
+    @media (max-width: $sm) {
+      background: transparent;
+    }
+  }
   &__container {
   }
   &__container {
@@ -10,6 +18,12 @@
       padding-top: var(--vr-section-y-2);
       padding-bottom: var(--vr-section-y-2);
       align-self: center;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
     &--media {
       align-self: flex-end;
@@ -17,6 +31,12 @@
       top: var(--vr-section-y-1);
       overflow: hidden;
       z-index: 0;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 0;
+        overflow: visible;
+      }
     }
   }
   &__content {
@@ -35,10 +55,31 @@
   &__media {
     position: relative;
     z-index: 0;
+    @media (max-width: $sm) {
+      margin: 0 var(--gap-container-);
+      padding-top: 40rem;
+      overflow: hidden;
+    }
+    &:before {
+      @media (max-width: $sm) {
+        background: $blueSkyColor;
+        width: 100vw;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+      }
+    }
   }
   &__hero {
     max-width: 422rem;
     margin: 0 auto;
+    @media (max-width: $sm) {
+      max-width: 64%;
+    }
     img {
       width: 100%;
       height: auto;
@@ -57,5 +98,15 @@
     user-select: none;
     overflow: hidden;
     z-index: -20;
+    @media (max-width: $lg) {
+      width: 600rem;
+      height: 600rem;
+      margin-top: 92rem;
+    }
+    @media (max-width: $sm) {
+      width: 480rem;
+      height: 480rem;
+      margin-top: 0rem;
+    }
   }
 }

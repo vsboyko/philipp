@@ -16,22 +16,6 @@
     text-align: center;
   }
   &__slider {
-    position: relative;
-    .swiper-button {
-      top: initial;
-      bottom: 152rem;
-      &-prev {
-        right: initial;
-        left: 64px;
-      }
-      &-next {
-        right: initial;
-        left: 104px;
-      }
-    }
-    .slider-control {
-      position: static;
-    }
   }
   &__footer {
   }

@@ -16,16 +16,42 @@
     text-align: center;
   }
   &__slider {
+    // position: relative;
+    // .swiper-button {
+    //   top: initial;
+    //   bottom: 152rem;
+    //   &-prev {
+    //     right: initial;
+    //     left: 64px;
+    //   }
+    //   &-next {
+    //     right: initial;
+    //     left: 104px;
+    //   }
+    // }
+    // .slider-control {
+    //   position: static;
+    // }
   }
   &__logo-brand-3d {
     width: 100%;
     max-width: 476rem;
     position: absolute;
-    right: -188px;
+    right: -188rem;
     bottom: -100rem;
     transform: rotate(-15deg);
     pointer-events: none;
     user-select: none;
+    @media (max-width: $lg) {
+      max-width: 300rem;
+      right: -120rem;
+      bottom: -40rem;
+    }
+    @media (max-width: $sm) {
+      max-width: 46%;
+      right: -18%;
+      bottom: -64rem;
+    }
     img {
       width: 100%;
       height: auto;

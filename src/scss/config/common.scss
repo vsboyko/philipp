@@ -94,12 +94,22 @@
       --btn-padding-x: 36rem;
       --btn-padding-y: 18rem;
       --btn-font-size: var(--fs-6);
+      @media (max-width: $lg) {
+        --btn-height: 54rem;
+        --btn-padding-x: 24rem;
+        --btn-padding-y: 12rem;
+      }
     }
     &-semi {
       --btn-height: 68rem;
       --btn-padding-x: 40rem;
       --btn-padding-y: 24rem;
       --btn-font-size: var(--fs-6);
+      @media (max-width: $lg) {
+        --btn-height: 58rem;
+        --btn-padding-x: 34rem;
+        --btn-padding-y: 15rem;
+      }
     }
   }
   &__inner {
@@ -131,6 +141,37 @@
       height: 100%;
       display: block;
     }
+  }
+}
+
+.btn-nav-toggle {
+  @extend %area-click, %btn-reset;
+  width: 32rem;
+  height: 32rem;
+  display: inline-flex;
+  flex-shrink: 0;
+  transition: $transition;
+  transition-property: color;
+  position: relative;
+  .u-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    pointer-events: none;
+    transition: $transition;
+    transition-property: transform, opacity, visibility;
+  }
+  &:not(.is-active) .u-icon:nth-child(2),
+  &.is-active .u-icon:nth-child(1) {
+    transform: scale(1.6);
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.is-active {
+    color: $greyColor;
   }
 }
 
@@ -203,22 +244,25 @@
     margin: 0 0 32rem;
     padding: 0;
     list-style-type: none;
-    li {
-      margin: 0;
-      padding: 0 0 0 40rem;
-      position: relative;
-      &:not(:last-child) {
-        margin-bottom: 14rem;
+  }
+  li {
+    margin: 0;
+    padding: 0 0 0 40rem;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 14rem;
+      @media (max-width: $sm) {
+        margin-bottom: 8rem;
       }
-      &:before {
-        background: 50% / contain - no-repeat;
-        width: 24rem;
-        height: 24rem;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+    }
+    &:before {
+      background: 50% / contain no-repeat;
+      width: 24rem;
+      height: 24rem;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
   &--negative {
@@ -245,6 +289,11 @@
       margin: 0 0 44rem 8rem;
       content: '';
       display: block;
+      @media (max-width: $sm) {
+        width: 64rem;
+        height: 44rem;
+        margin: 0 0 24rem 4rem;
+      }
     }
     footer {
       margin: var(--vr-3) 0 0;
@@ -288,6 +337,9 @@
       padding-bottom: 0;
       .u-section__bg-half {
         background: linear-gradient(to right, transparent 0%, transparent 50%, $blueMediumColor 50%, $blueMediumColor 100%);
+        @media (max-width: $lg) {
+          background: linear-gradient(to bottom, transparent 0%, transparent 50%, $blueMediumColor 50%, $blueMediumColor 100%);
+        }
       }
       .row > :nth-child(even),
       .row > :nth-child(even) {
@@ -357,8 +409,15 @@
     pointer-events: none;
     user-select: none;
     overflow: visible;
+    @media (max-width: $sm) {
+      width: 48rem;
+      height: 48rem;
+    }
     &:not(:last-child) {
       margin-right: -16rem;
+      @media (max-width: $sm) {
+        margin-right: -14rem;
+      }
     }
     & + & {
       z-index: 1;
@@ -410,6 +469,10 @@
     width: 32rem;
     height: 78rem;
     margin: 0 auto 8rem;
+    @media (max-width: $sm) {
+      width: 24rem;
+      height: 58rem;
+    }
   }
   &__title {
     font-weight: 600;
@@ -429,9 +492,8 @@
   transition-property: background, color, transform, opacity, visibility;
   z-index: 4;
   @media (max-width: $sm) {
-    width: 48rem;
-    height: 48rem;
-    margin-top: -24rem;
+    width: 28rem;
+    height: 28rem;
   }
   &:hover {
     text-decoration: none;
@@ -511,23 +573,37 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  @media (max-width: $sm) {
+    min-height: 28rem;
+  }
   &__btn {
-    position: absolute;
-    top: 0;
+    flex-shrink: 0;
+    @media (min-width: $sm-mf) {
+      position: absolute;
+      top: 0;
+    }
     &.swiper-button-prev {
-      right: 48rem;
+      @media (min-width: $sm-mf) {
+        right: 48rem;
+      }
     }
     &.swiper-button-next {
-      right: 0;
+      @media (min-width: $sm-mf) {
+        right: 0;
+      }
     }
   }
   &__pagination {
+    margin-right: 20rem;
+    margin-left: 20rem;
   }
 }
 
 .info-card {
   $infoCardYLg: 48rem;
   $infoCardXLg: 40rem;
+  $infoCardYLgSm: 30rem;
+  $infoCardXLgSm: 20rem;
   height: 100%;
   position: relative;
   z-index: 0;
@@ -553,9 +629,18 @@
     padding: $infoCardYLg $infoCardXLg;
     border: 1px solid rgba($blueLightColor, .1);
     border-radius: var(--radius-sm);
+    @media (max-width: $lg) {
+      padding: $infoCardYLgSm $infoCardXLgSm;
+    }
   }
   &__hero {
     margin: -1*$infoCardYLg -1*$infoCardXLg var(--vr-11);
+    @media (max-width: $lg) {
+      margin: -1*$infoCardYLgSm -1*$infoCardXLgSm var(--vr-11);
+    }
+  }
+  &__figure {
+    margin-bottom: var(--vr-8);
   }
   &__media {
     max-width: 216rem;
@@ -619,17 +704,17 @@
   &--active {
     &-mobile {
       .swiper-wrapper {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $sm-mf) {
           width: auto;
           flex-wrap: nowrap;
         }
       }
       .u-slider__slide {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $sm-mf) {
         }
       }
       .u-slider__slide--size-4 {
-        @media (min-width: $lg-mf) {
+        @media (min-width: $sm-mf) {
           max-width: 33.33333%;
           flex-basis: 33.33333%;
         }
@@ -659,7 +744,7 @@
     }
   }
   &__card {
-    @media (min-width: $lg-mf) {
+    @media (min-width: $sm-mf) {
       height: 100%;
     }
   }
@@ -671,6 +756,8 @@
 .benefits-card {
   $infoCardYLg: 63rem;
   $infoCardXLg: 50rem;
+  $infoCardYLgSm: 30rem;
+  $infoCardXLgSm: 20rem;
   &__inner {
     background: rgba($greyLightColor, .1);
     backdrop-filter: blur(18px);
@@ -678,9 +765,18 @@
     padding: $infoCardYLg $infoCardXLg;
     border: 1px solid rgba($blueLightColor, .1);
     border-radius: var(--radius-sm);
+    @media (max-width: $lg) {
+      padding: $infoCardYLgSm $infoCardXLgSm;
+    }
   }
   &__title {
     margin: 0 0 34rem;
+    @media (max-width: $lg) {
+      margin-bottom: 26rem;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 20rem;
+    }
   }
   &__content {
     color: $blueLightColor;
@@ -810,14 +906,17 @@
     border-radius: 50%;
     animation: pulse 1.6s infinite ease-out;
     @media (max-width: $md) {
-      width: 60rem;
-      height: 60rem;
+      width: 64rem;
+      height: 64rem;
     }
   }
   &:after {
     border-style: solid;
     border-width: 24rem 0 24rem 42rem;
     border-color: transparent transparent transparent $accentColor;
+    @media (max-width: $lg) {
+      border-width: 14rem 0 14rem 24rem;
+    }
   }
 }
 
@@ -882,7 +981,7 @@
     }
     .faq-card__icon {
       .u-icon {
-        transform: none;
+        transform: rotate(180deg);
       }
     }
   }
@@ -908,6 +1007,14 @@
     text-align: left;
     flex-grow: 1;
     cursor: pointer;
+    @media (max-width: $lg) {
+      min-height: 82rem;
+      padding: 34rem 0;
+    }
+    @media (max-width: $sm) {
+      min-height: 68rem;
+      padding: 28rem 0;
+    }
     &:before {
       z-index: 1;
     }
@@ -915,6 +1022,7 @@
   &__title {
     margin: 0 var(--gap-fluid) 0 0;
     font-weight: bold;
+    text-transform: none;
   }
   &__icon {
     width: 24rem;
@@ -938,7 +1046,6 @@
       width: 100%;
       height: 100%;
       display: block;
-      transform: rotate(180deg);
       transition: $transition;
       transition-property: transform;
     }
@@ -968,9 +1075,21 @@
   &__col {
     margin-bottom: 0 !important;
     &--content {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
     }
     &--media {
       min-height: 454rem;
+      @media (max-width: $lg) {
+        min-height: 390rem;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        min-height: 240rem;
+        flex-basis: 100%;
+      }
     }
   }
   &__content {
@@ -981,6 +1100,15 @@
     border: 1px solid rgba($blueLightColor, .1);
     border-right-width: 0;
     border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    @media (max-width: $lg) {
+      padding: 44rem 28rem 80rem;
+    }
+    @media (max-width: $sm) {
+      margin-right: 0;
+      padding: 30rem 20rem;
+      border-width: 1px 1px 0;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    }
   }
   &__text {
     blockquote {
@@ -999,5 +1127,8 @@
     @extend %img-cover;
     height: 100%;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    @media (max-width: $sm) {
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    }
   }
 }

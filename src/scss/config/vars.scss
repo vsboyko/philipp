@@ -91,6 +91,8 @@ $xs-mf: $xs + 1;
   --vr-13: 24rem;
   --vr-14: 72rem;
 
+  --scroll-offset: 0;
+
   --vr-title: 13rem;
   --vr-subtitle: 123rem;
   --vr-section-y-1: var(--vr-6);
@@ -102,5 +104,64 @@ $xs-mf: $xs + 1;
 
   --vh: 1vh;
   @media (max-width: $lg) {
+    --fs-default: 14rem;
+    --fs-1: 42rem;
+    --fs-2: 34rem;
+    --fs-3: 28rem;
+    --fs-4: 22rem;
+    --fs-5: 18rem;
+    --fs-6: 14rem;
+    --fs-10: 70rem;
+
+    --gap: 10rem;
+    --gap-: -10rem;
+    --gap-fluid: 20rem;
+    --gap-fluid-: -20rem;
+
+    --vr-1: 16rem;
+    --vr-2: 42rem;
+    --vr-3: 46rem;
+    --vr-4: 6rem;
+    --vr-5: 94rem;
+    --vr-6: 120rem;
+    --vr-7: 60rem;
+    --vr-8: 32rem;
+    --vr-9: 18rem;
+    --vr-10: 78rem;
+    --vr-11: 38rem;
+    --vr-12: 10rem;
+    --vr-13: 18rem;
+    --vr-14: 60rem;
+
+    --vr-title: 10rem;
+    --vr-subtitle: 90rem;
+
+    --header-height: 90rem;
+  }
+  @media (max-width: $sm) {
+    --fs-default: 14rem;
+    --fs-1: 36rem;
+    --fs-2: 30rem;
+    --fs-3: 24rem;
+    --fs-4: 20rem;
+
+    --vr-1: 14rem;
+    --vr-2: 36rem;
+    --vr-3: 40rem;
+    --vr-4: 5rem;
+    --vr-5: 80rem;
+    --vr-6: 94rem;
+    --vr-7: 50rem;
+    --vr-8: 28rem;
+    --vr-9: 16rem;
+    --vr-10: 60rem;
+    --vr-11: 34rem;
+    --vr-12: 8rem;
+    --vr-13: 16rem;
+    --vr-14: 50rem;
+
+    --vr-subtitle: 60rem;
+
+    --header-height: 78rem;
   }
 }

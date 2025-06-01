@@ -9,8 +9,11 @@
 
 import BaseHelpers from './helpers/BaseHelpers.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
+import { SmoothScroll } from './modules/SmoothScroll.js';
+import Counter from './modules/Counter.js';
 import PopupManager from './modules/PopupManager.js';
 import SliderInit from './modules/SliderInit.js';
+import InitBtnRotuer from './modules/InitBtnRotuer.js';
 import FaqCard from './modules/FaqCard.js';
 import VideoPlayer from './modules/VideoPlayer.js';
 
@@ -23,10 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // header nav mobile toggle
   new HeaderBtnToggle();
 
+  // js-anchor
+  const smoothScroll = new SmoothScroll('.js-anchor', '--scroll-offset', 650);
+
+  // about counter
+  new Counter('[data-counter-countdown="about-card"]');
+
   // sliders swiper init
   SliderInit('.js-slider-services-init', {
-    slidesPerView: 3,
-    loop: false,
+    slidesPerView: 1,
+    loop: true,
     spaceBetween: 0,
   }, {
     onlyMobile: true
@@ -36,6 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesPerView: 3,
     loop: false,
     spaceBetween: 0,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
   });
 
   SliderInit('.js-slider-reviews-init', {
@@ -45,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   SliderInit('.js-slider-goods-init', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: false,
     spaceBetween: 0,
   }, {
@@ -55,9 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // modal init
   new PopupManager();
 
+  // .js-btn-router section
+  InitBtnRotuer();
+
   // faq card
   new FaqCard();
 
-  // video playey play/pause
+  // video player play/pause
   VideoPlayer();
 });

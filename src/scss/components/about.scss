@@ -4,12 +4,16 @@
   &__container {
   }
   &__list {
-    padding: 24rem 0;
+    padding: 28rem 0 20rem;
     display: flex;
     justify-content: space-around;
     color: $greyColor;
     position: relative;
     z-index: 0;
+    @media (max-width: $sm) {
+      padding: 10rem 0;
+      flex-wrap: wrap;
+    }
     &:before {
       background: $accentColor;
       width: 100vw;
@@ -28,8 +32,17 @@
     padding: 0 40rem;
     text-align: center;
     flex: 0 0 33.33%;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      padding: 15rem;
+      flex-basis: 100%;
+    }
     &:not(:last-child) {
-      border-right: 1px solid currentColor;
+      border: 0 solid currentColor;
+      border-width: 0 1px 0 0;
+      @media (max-width: $sm) {
+        border-width: 0 0 1px 0;
+      }
     }
     &-content {
       max-width: 240rem;
@@ -48,13 +61,23 @@
     max-width: 348rem;
     margin: 364rem auto 284rem;
     position: relative;
+    @media (max-width: $lg) {
+      margin: 240rem auto 94rem;
+    }
+    @media (max-width: $sm) {
+      max-width: 220rem;
+      margin-bottom: 180rem;
+    }
     &-title-wrapper {
       width: 100vw;
+      max-width: 1440rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: -2;
+      @media (max-width: $sm) {
+      }
       &:before {
         background: $gradientGreyRadial1;
         width: 100%;
@@ -126,23 +149,43 @@
       text-transform: uppercase;
       position: absolute;
       z-index: 2;
+      @media (max-width: $sm) {
+        width: 240rem;
+        padding: 20rem 14rem;
+      }
       &:nth-child(1) {
         top: -19%;
         left: -64.5%;
         z-index: 0;
+        @media (max-width: $sm) {
+          top: -34%;
+          left: -22%;
+        }
       }
       &:nth-child(2) {
         top: 31%;
         left: 87%;
+        @media (max-width: $sm) {
+          top: 40%;
+          right: -60rem;
+          left: initial;
+        }
       }
       &:nth-child(3) {
         top: 77.1%;
         left: -54.7%;
+        @media (max-width: $sm) {
+          top: 108%;
+          left: -10%;
+        }
       }
       &:before {
         content: counter(aboutCounter);
         margin: 0 3rem 0 0;
         flex: 0 0 20rem;
+        @media (max-width: $sm) {
+          flex-basis: 16rem;
+        }
       }
       &-title {
         margin: 0;
@@ -157,5 +200,11 @@
     padding-bottom: 100rem;
     display: flex;
     justify-content: center;
+    @media (max-width: $lg) {
+      padding-bottom: 74rem;
+    }
+    @media (max-width: $sm) {
+      padding-bottom: 50rem;
+    }
   }
 }

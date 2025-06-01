@@ -1,4 +1,8 @@
 .header {
+  transition: $transition;
+  transition-property: color;
+  position: relative;
+  z-index: 998;
   &__container {
   }
   &__inner {
@@ -26,24 +30,72 @@
     }
   }
   &__dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    @media (max-width: $md) {
+      background: rgba($whiteColor, 1);
+      backdrop-filter: blur(10px);
+      width: calc(100% - 88rem);
+      max-width: 360rem;
+      margin-right: 88rem;
+      padding: 160rem var(--gap-container) 40rem;
+      flex-direction: column;
+      align-items: initial;
+      justify-content: initial;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: $transition;
+      transition-property: transform, visibility, opacity;
+      z-index: -1;
+    }
+    &:not(.is-show) {
+      @media (max-width: $md) {
+        transform: translateX(-100vw);
+        pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
   }
   &__nav {
     flex-grow: 1;
+    @media (max-width: $md) {
+      margin-bottom: 40rem;
+      font-size: var(--fs-5);
+    }
     &-list {
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       list-style-type: none;
+      @media (max-width: $md) {
+        flex-direction: column;
+        justify-content: initial;
+      }
     }
     &-item {
-      margin: 0 15rem;
+      margin: 0 40rem;
       padding: 0;
+      @media (max-width: $md) {
+        margin: 0;
+      }
     }
     &-link {
       @extend %area-click;
+      display: block;
       text-transform: uppercase;
       transition: $transition;
+      @media (max-width: $md) {
+        margin: 0 var(--gap-container-);
+        padding: 20rem var(--gap-container);
+      }
       &:hover {
         text-decoration: none;
         @media (min-width: $lg-mf) {
@@ -54,5 +106,7 @@
   }
   &__btn {
     flex-shrink: 0;
+    @media (max-width: $md) {
+    }
   }
 }

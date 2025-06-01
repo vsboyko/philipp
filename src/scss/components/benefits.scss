@@ -26,6 +26,16 @@
     pointer-events: none;
     user-select: none;
     z-index: -2;
+    @media (max-width: $lg) {
+      width: 600rem;
+      right: -50rem;
+      bottom: -120rem;
+    }
+    @media (max-width: $sm) {
+      width: 480rem;
+      right: -30rem;
+      bottom: -80rem;
+    }
     &:before {
       background: $gradientGreyRadial2;
       z-index: 0;
@@ -50,6 +60,10 @@
   }
   &__row {
     &-col {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
     }
     &-card {
     }

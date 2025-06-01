@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20250530223422">
+  <link rel="stylesheet" href="css/style.min.css??=v=20250601211032">
   <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg">
   <link rel="shortcut icon" href="static/favicon/favicon.ico">
@@ -42,12 +42,20 @@
             </li>
           </ul>
         </nav>
+        <a href="#" class="btn btn--theme-accent-fill header__btn btn--size-md">
+          <span class="btn__inner">
+            <span class="btn__title">Set an Appointment</span>
+          </span>
+        </a>
       </div>
-      <a href="#" class="btn btn--theme-accent-fill header__btn btn--size-md">
-        <span class="btn__inner">
-          <span class="btn__title">Set an Appointment</span>
-        </span>
-      </a>
+      <button type="button" class="btn-nav-toggle d-md-block header__toggle js-header-toggle-open">
+        <svg class="u-icon">
+          <use xlink:href="/images/icons/icons.svg#menu-open"></use>
+        </svg>
+        <svg class="u-icon">
+          <use xlink:href="/images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -56,7 +64,7 @@
           
           <section class="intro">
             <picture class="bg-gradient schema-bg schema-bg--size-full intro__bg">
-              
+              <source srcset="images/schema-bg-1.webp, images/schema-bg-1@2x.webp 2x" type="image/webp">
               <img src="images/schema-bg-1.png" srcset="images/schema-bg-1.png, images/schema-bg-1@2x.png 2x" alt="Duis ac aliquet urna" width="1920" height="1008">
             </picture>
             <div class="container container--size-md intro__container">
@@ -82,19 +90,19 @@
                     <div class="clients-happy intro__clients-happy">
                       <div class="clients-happy__avatar-list">
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                         </picture>
                       </div>
@@ -108,7 +116,7 @@
                 <div class="row__col--4 intro__col intro__col--media">
                   <div class="intro__media">
                     <picture class="intro__hero">
-                      
+                      <source srcset="images/intro-hero.webp, images/intro-hero@2x.webp 2x" type="image/webp">
                       <img src="images/intro-hero.png" srcset="images/intro-hero.png, images/intro-hero@2x.png 2x" alt="Phasellus sed egetsem pellentesque commodo" width="534" height="800">
                     </picture>
                   </div>
@@ -124,19 +132,19 @@
               <div class="about__list">
                 <article class="about__card">
                   <div class="about__card-content">
-                    <h3 class="about__card-title fs-2 js-counter-countdown" data-counter-countdown="about-card">102+</h3>
+                    <h3 class="about__card-title fs-2" data-counter-countdown="about-card">102+</h3>
                     <p class="about__card-text">Prozesse in Konzernen optimiert</p>
                   </div>
                 </article>
                 <article class="about__card">
                   <div class="about__card-content">
-                    <h3 class="about__card-title fs-2 js-counter-countdown" data-counter-countdown="about-card">19+</h3>
+                    <h3 class="about__card-title fs-2" data-counter-countdown="about-card">19+</h3>
                     <p class="about__card-text">Jahre<br>Erfahrung</p>
                   </div>
                 </article>
                 <article class="about__card">
                   <div class="about__card-content">
-                    <h3 class="about__card-title fs-2 js-counter-countdown" data-counter-countdown="about-card">20000+</h3>
+                    <h3 class="about__card-title fs-2" data-counter-countdown="about-card">20000+</h3>
                     <p class="about__card-text">Stunden an Prozessen gearbeitet</p>
                   </div>
                 </article>
@@ -146,7 +154,7 @@
                   <h2 class="about__main-title" data-title="Sed tincidunt varius dui, quis euismod arcu cursus quis. Aliquam varius ligula quis dolor pharetra, non elementum mauris rhoncus.">Sed tincidunt varius dui, quis euismod arcu cursus quis. Aliquam varius ligula quis dolor pharetra, non elementum mauris rhoncus.</h2>
                 </div>
                 <picture class="about__hero">
-                  
+                  <source srcset="images/about-hero.webp, images/about-hero@2x.webp 2x" type="image/webp">
                   <img src="images/about-hero.png" srcset="images/about-hero.png, images/about-hero@2x.png 2x" alt="About" width="348" height="338">
                 </picture>
                 <div class="about__services">
@@ -162,7 +170,7 @@
                 </div>
               </div>
               <div class="about__footer">
-                <button type="button" class="js-section-router-btn section-router">
+                <button type="button" class="js-btn-router section-router">
                   <svg class="u-icon section-router__icon">
                     <use xlink:href="images/icons/icons.svg#mouse-scroll"></use>
                   </svg>
@@ -185,7 +193,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__media">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-1.webp, images/services-card-1@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-1.png" srcset="images/services-card-1.png, images/services-card-1@2x.png 2x" alt="Consectetur adipiscing" width="216" height="216">
                             </picture>
                           </div>
@@ -203,7 +211,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__media">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-2.webp, images/services-card-2@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-2.png" srcset="images/services-card-2.png, images/services-card-2@2x.png 2x" alt="Unklarheit im Marketing" width="216" height="216">
                             </picture>
                           </div>
@@ -221,7 +229,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__media">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-3.webp, images/services-card-3@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-3.png" srcset="images/services-card-3.png, images/services-card-3@2x.png 2x" alt="Unklarheit im Marketing" width="216" height="216">
                             </picture>
                           </div>
@@ -235,6 +243,19 @@
                       </article>
                     </div>
                   </div>
+                  <div class="slider-control u-slider__control d-sm-block">
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-prev swiper-button-prev">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
+                    <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-next swiper-button-next">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="section-footer services__footer">
@@ -246,19 +267,19 @@
                 <div class="clients-happy clients-happy--border-dark clients-happy--dir-column section-footer__clients-happy">
                   <div class="clients-happy__avatar-list">
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                     </picture>
                   </div>
@@ -269,7 +290,7 @@
                 </div>
               </div>
               <picture class="services__logo-brand-3d">
-                
+                <source srcset="images/logo-brand-3d.webp, images/logo-brand-3d@2x.webp 2x" type="image/webp">
                 <img src="images/logo-brand-3d.png" srcset="images/logo-brand-3d.png, images/logo-brand-3d@2x.png 2x" alt="Nullam vitae interdum arcu non ornare " width="476" height="272">
               </picture>
             </div>
@@ -289,7 +310,7 @@
                       <div class="info-card__inner">
                         <div class="info-card__media">
                           <picture class="info-card__picture">
-                            
+                            <source srcset="images/comparison-card-1.webp, images/comparison-card-1@2x.webp 2x" type="image/webp">
                             <img src="images/comparison-card-1.png" srcset="images/comparison-card-1.png, images/comparison-card-1@2x.png 2x" alt="Unklarheit im Marketing" width="216" height="216">
                           </picture>
                         </div>
@@ -310,7 +331,7 @@
                       <div class="info-card__inner">
                         <div class="info-card__media">
                           <picture class="info-card__picture">
-                            
+                            <source srcset="images/comparison-card-2.webp, images/comparison-card-2@2x.webp 2x" type="image/webp">
                             <img src="images/comparison-card-2.png" srcset="images/comparison-card-2.png, images/comparison-card-2@2x.png 2x" alt="Unklarheit im Marketing" width="216" height="216">
                           </picture>
                         </div>
@@ -341,7 +362,7 @@
           <section id="benefits" class="u-section benefits">
             <div class="container container--size-md benefits__container">
               <picture class="benefits__decor">
-                
+                <source srcset="images/decor-1.webp, images/decor-1@2x.webp 2x" type="image/webp">
                 <img src="images/decor-1.png" srcset="images/decor-1.png, images/decor-1@2x.png 2x" alt="Nullam vitae interdum" width="458" height="350">
               </picture>
               <picture class="bg-gradient benefits__schema-bg">
@@ -406,7 +427,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -430,7 +451,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -454,7 +475,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -478,7 +499,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -502,7 +523,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -526,7 +547,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -550,7 +571,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__hero">
                             <picture class="info-card__picture info-card__picture--size-fluid">
-                              
+                              <source srcset="images/services-card-4.webp, images/services-card-4@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-4.jpg" srcset="images/services-card-4.jpg, images/services-card-4@2x.jpg 2x" alt="Consectetur adipiscing" width="400" height="312">
                             </picture>
                           </div>
@@ -571,13 +592,13 @@
                     </div>
                   </div>
                   <div class="slider-control u-slider__control">
-                    <button type="button" class="slider-control__btn swiper-button js-slider-btn-prev swiper-button-prev swiper-button--position-right">
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-prev swiper-button-prev">
                       <svg class="u-icon">
                         <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                       </svg>
                     </button>
                     <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
-                    <button type="button" class="slider-control__btn swiper-button js-slider-btn-next swiper-button-next swiper-button--position-right">
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-next swiper-button-next">
                       <svg class="u-icon">
                         <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
                       </svg>
@@ -594,19 +615,19 @@
                 <div class="clients-happy clients-happy--border-dark clients-happy--dir-column section-footer__clients-happy">
                   <div class="clients-happy__avatar-list">
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                     </picture>
                   </div>
@@ -625,19 +646,19 @@
               <div class="clients-happy clients__clients-happy">
                 <div class="clients-happy__avatar-list">
                   <picture class="clients-happy__avatar">
-                    
+                    <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                     <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                   </picture>
                   <picture class="clients-happy__avatar">
-                    
+                    <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                     <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                   </picture>
                   <picture class="clients-happy__avatar">
-                    
+                    <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                     <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                   </picture>
                   <picture class="clients-happy__avatar">
-                    
+                    <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                     <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                   </picture>
                 </div>
@@ -653,15 +674,15 @@
                   <div class="u-marquee__row">
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -670,15 +691,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -687,15 +708,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -704,15 +725,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -721,15 +742,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -738,15 +759,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -759,15 +780,15 @@
                   <div class="u-marquee__row">
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -776,15 +797,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -793,15 +814,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -810,15 +831,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -827,15 +848,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -844,15 +865,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -865,15 +886,15 @@
                   <div class="u-marquee__row">
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -882,15 +903,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -899,15 +920,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="80">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -916,15 +937,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -933,15 +954,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -950,15 +971,15 @@
                     </div>
                     <div class="u-marquee__col">
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-1.webp, images/client-logo-1@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-1.png" srcset="images/client-logo-1.png, images/client-logo-1@2x.png 2x" alt="Client avatar 1" width="180" height="80">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-2.webp, images/client-logo-2@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-2.png" srcset="images/client-logo-2.png, images/client-logo-2@2x.png 2x" alt="Client avatar 2" width="52" height="52">
                       </picture>
                       <picture class="u-marquee__clients-logo">
-                        
+                        <source srcset="images/client-logo-3.webp, images/client-logo-3@2x.webp 2x" type="image/webp">
                         <img src="images/client-logo-3.png" srcset="images/client-logo-3.png, images/client-logo-3@2x.png 2x" alt="Client avatar 3" width="90" height="78">
                       </picture>
                       <picture class="u-marquee__clients-logo">
@@ -976,7 +997,7 @@
                         <img src="images/schema-bg-3.png" alt="" width="814" height="756">
                       </picture>
                       <picture class="clients__author-hero">
-                        
+                        <source srcset="images/clients-hero.webp, images/clients-hero@2x.webp 2x" type="image/webp">
                         <img src="images/clients-hero.png" srcset="images/clients-hero.png, images/clients-hero@2x.png 2x" alt="Kate Stewart" width="386" height="668">
                       </picture>
                     </div>
@@ -1020,11 +1041,11 @@
                   <div class="row__col--5 info__row-col info__row-col--media">
                     <div class="info__media">
                       <picture class="info__media-bg-pattern">
-                        
+                        <source srcset="images/pattern-1.webp, images/pattern-1@2x.webp 2x" type="image/webp">
                         <img src="images/pattern-1.png" srcset="images/pattern-1.png, images/pattern-1@2x.png 2x" alt="" width="720" height="720">
                       </picture>
                       <picture class="info__hero">
-                        
+                        <source srcset="images/info-hero.webp, images/info-hero@2x.webp 2x" type="image/webp">
                         <img src="images/info-hero.png" srcset="images/info-hero.png, images/info-hero@2x.png 2x" alt="Unklarheit im Marketing" width="422" height="802">
                       </picture>
                     </div>
@@ -1039,7 +1060,7 @@
             <div class="container container--size-md reviews__container">
               <h2 class="u-title reviews__title">Nullam vitae interdum</h2>
               <h3 class="u-subtitle reviews__subtitle">Suspendisse rhoncus leo nec dui aliquet, vel sollicitudin tellus auctor</h3>
-              <div class="u-slider portfolio__slider">
+              <div class="u-slider reviews__slider">
                 <div class="js-slider-init swiper js-slider-reviews-init">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide u-slider__slide u-slider__slide--size-12">
@@ -1061,7 +1082,7 @@
                           <div class="row__col--5 reviews-card__col reviews-card__col--media">
                             <div class="reviews-card__hero">
                               <picture class="reviews-card__picture">
-                                
+                                <source srcset="images/reviews-card-1.webp, images/reviews-card-1@2x.webp 2x" type="image/webp">
                                 <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
                               </picture>
                             </div>
@@ -1088,7 +1109,7 @@
                           <div class="row__col--5 reviews-card__col reviews-card__col--media">
                             <div class="reviews-card__hero">
                               <picture class="reviews-card__picture">
-                                
+                                <source srcset="images/reviews-card-1.webp, images/reviews-card-1@2x.webp 2x" type="image/webp">
                                 <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
                               </picture>
                             </div>
@@ -1115,7 +1136,7 @@
                           <div class="row__col--5 reviews-card__col reviews-card__col--media">
                             <div class="reviews-card__hero">
                               <picture class="reviews-card__picture">
-                                
+                                <source srcset="images/reviews-card-1.webp, images/reviews-card-1@2x.webp 2x" type="image/webp">
                                 <img src="images/reviews-card-1.jpg" srcset="images/reviews-card-1.jpg, images/reviews-card-1@2x.jpg 2x" alt="Kate Stewart" width="506" height="454">
                               </picture>
                             </div>
@@ -1162,7 +1183,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-7.webp, images/services-card-7@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-7.png" srcset="images/services-card-7.png, images/services-card-7@2x.png 2x" alt="Unklarheit im Marketing" width="220" height="208">
                             </picture>
                           </div>
@@ -1180,7 +1201,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-8.webp, images/services-card-8@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-8.png" srcset="images/services-card-8.png, images/services-card-8@2x.png 2x" alt="Unklarheit im Marketing" width="182" height="194">
                             </picture>
                           </div>
@@ -1198,7 +1219,7 @@
                         <div class="info-card__inner">
                           <div class="info-card__figure">
                             <picture class="info-card__picture">
-                              
+                              <source srcset="images/services-card-9.webp, images/services-card-9@2x.webp 2x" type="image/webp">
                               <img src="images/services-card-9.png" srcset="images/services-card-9.png, images/services-card-9@2x.png 2x" alt="Unklarheit im Marketing" width="220" height="194">
                             </picture>
                           </div>
@@ -1211,6 +1232,19 @@
                         </div>
                       </article>
                     </div>
+                  </div>
+                  <div class="slider-control u-slider__control d-sm-block">
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-prev swiper-button-prev">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
+                    <ul class="js-slider-pagination slider-control__pagination swiper-pagination"></ul>
+                    <button type="button" class="slider-control__btn swiper-button swiper-button--position-right js-slider-btn-next swiper-button-next">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1249,19 +1283,19 @@
                 <div class="clients-happy clients-happy--dir-column section-footer__clients-happy">
                   <div class="clients-happy__avatar-list">
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                     </picture>
                     <picture class="clients-happy__avatar">
-                      
+                      <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                       <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                     </picture>
                   </div>
@@ -1292,19 +1326,19 @@
                     <div class="clients-happy clients-happy--border-dark specialty__happy">
                       <div class="clients-happy__avatar-list">
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-1.webp, images/avatar/client-1@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-1.png" srcset="images/avatar/client-1.png, images/avatar/client-1@2x.png 2x" alt="Client avatar 1" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-2.webp, images/avatar/client-2@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-2.png" srcset="images/avatar/client-2.png, images/avatar/client-2@2x.png 2x" alt="Client avatar 2" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-3.webp, images/avatar/client-3@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-3.png" srcset="images/avatar/client-3.png, images/avatar/client-3@2x.png 2x" alt="Client avatar 3" width="56" height="56">
                         </picture>
                         <picture class="clients-happy__avatar">
-                          
+                          <source srcset="images/avatar/client-4.webp, images/avatar/client-4@2x.webp 2x" type="image/webp">
                           <img src="images/avatar/client-4.png" srcset="images/avatar/client-4.png, images/avatar/client-4@2x.png 2x" alt="Client avatar 4" width="56" height="56">
                         </picture>
                       </div>
@@ -1318,7 +1352,7 @@
                 <div class="row__col--5 specialty__col specialty__col--media">
                   <div class="specialty__media">
                     <picture class="specialty__hero">
-                      
+                      <source srcset="images/specialty-hero.webp, images/specialty-hero@2x.webp 2x" type="image/webp">
                       <img src="images/specialty-hero.png" srcset="images/specialty-hero.png, images/specialty-hero@2x.png 2x" alt="Unklarheit im Marketing" width="544" height="1186">
                     </picture>
                   </div>
@@ -1514,6 +1548,6 @@
 </div>
     </div>
 
-    <script src="js/app.min.js??=v=20250530223422"></script>
+    <script src="js/app.min.js??=v=20250601211032"></script>
   </body>
 </html>

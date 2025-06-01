@@ -15,8 +15,40 @@
     text-align: center;
   }
   &__slider {
+    position: relative;
+    .swiper-button {
+      top: initial;
+      bottom: 152rem;
+      @media (max-width: $lg) {
+        bottom: 120rem;
+      }
+      @media (max-width: $sm) {
+        bottom: 0;
+      }
+      &-prev {
+        right: initial;
+        left: 64rem;
+        @media (max-width: $lg) {
+          left: 29rem;
+        }
+        @media (max-width: $sm) {
+          left: 0;
+        }
+      }
+      &-next {
+        right: initial;
+        left: 104rem;
+        @media (max-width: $lg) {
+          left: 74rem;
+        }
+        @media (max-width: $sm) {
+          left: 0;
+        }
+      }
+    }
     .slider-control {
       margin-top: var(--vr-14);
+      position: static;
     }
   }
   &__footer {

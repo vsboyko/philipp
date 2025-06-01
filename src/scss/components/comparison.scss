@@ -1,8 +1,19 @@
 .comparison {
+  overflow: hidden;
   &__container {
   }
   &__row {
+    @media (max-width: $lg) {
+      margin-top: -30rem;
+      margin-bottom: -30rem;
+    }
     &-col {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+        margin: 30rem 0;
+        overflow: hidden;
+      }
     }
     &-card {
     }
