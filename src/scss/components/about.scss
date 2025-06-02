@@ -96,6 +96,8 @@
       color: transparent;
       pointer-events: none;
       user-select: none;
+      transition: .08s linear;
+      transition-property: transform, text-indent;
       &:before,
       &:after {
         width: 100%;

@@ -1,8 +1,14 @@
 .header {
+  background: $bgSite;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 1px rgba($blueMediumColor, 0);
   transition: $transition;
-  transition-property: color;
-  position: relative;
+  transition-property: color, box-shadow;
   z-index: 998;
+  &.is-fixed {
+    box-shadow: 0 1px 1px rgba($blueMediumColor, .1);
+  }
   &__container {
   }
   &__inner {

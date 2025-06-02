@@ -8,8 +8,10 @@
  */
 
 import BaseHelpers from './helpers/BaseHelpers.js';
+import StickyHeader from './modules/StickyHeader.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import { SmoothScroll } from './modules/SmoothScroll.js';
+import { GsapAnimations } from './modules/GsapAnimations.js';
 import Counter from './modules/Counter.js';
 import PopupManager from './modules/PopupManager.js';
 import SliderInit from './modules/SliderInit.js';
@@ -23,11 +25,17 @@ BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
+  // toggle class header
+  new StickyHeader();
+
   // header nav mobile toggle
   new HeaderBtnToggle();
 
   // js-anchor
   const smoothScroll = new SmoothScroll('.js-anchor', '--scroll-offset', 650);
+
+  // GSAP animations
+  new GsapAnimations();
 
   // about counter
   new Counter('[data-counter-countdown="about-card"]');

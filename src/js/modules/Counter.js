@@ -12,9 +12,8 @@ export default class Counter {
     });
 
     this.elements.forEach(el => {
-      if (!el.dataset.counted) {
-        this.observer.observe(el);
-      }
+      el.dataset._original = el.textContent;
+      this.observer.observe(el);
     });
   }
 
@@ -22,16 +21,19 @@ export default class Counter {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         this.animateCount(entry.target);
-        this.observer.unobserve(entry.target);
       }
     });
   }
 
   animateCount(el) {
-    const target = parseInt(el.textContent.replace(/\D/g, ''), 10);
+    if (el.dataset.animating === 'true') return;
+
+    el.dataset.animating = 'true';
+
+    const target = parseInt(el.dataset._original.replace(/\D/g, ''), 10);
+    const suffix = el.dataset._original.replace(/[0-9]/g, '').trim();
     const start = 0;
     const startTime = performance.now();
-    const suffix = el.textContent.replace(/[0-9]/g, '').trim();
 
     const update = (time) => {
       const progress = Math.min((time - startTime) / this.duration, 1);
@@ -40,8 +42,8 @@ export default class Counter {
       if (progress < 1) {
         requestAnimationFrame(update);
       } else {
-        el.dataset.counted = true;
         el.textContent = `${target}${suffix}`;
+        el.dataset.animating = 'false';
       }
     };
 
