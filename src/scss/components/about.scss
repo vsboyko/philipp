@@ -90,10 +90,12 @@
       }
     }
     &-title {
+      margin: 0;
       font-weight: bold;
       font-size: var(--fs-10);
       text-align: center;
       color: transparent;
+      position: relative;
       pointer-events: none;
       user-select: none;
       transition: .08s linear;

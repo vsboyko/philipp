@@ -100,6 +100,7 @@ $xs-mf: $xs + 1;
   --vr-slider-control: var(--vr-10);
 
   --header-height: 140rem;
+  --header-height-fixed: 84rem;
   --site--offset: var(--header-height);
 
   --vh: 1vh;
@@ -136,7 +137,8 @@ $xs-mf: $xs + 1;
     --vr-title: 10rem;
     --vr-subtitle: 90rem;
 
-    --header-height: 90rem;
+    --header-height: 88rem;
+    --header-height-fixed: 70rem;
   }
   @media (max-width: $sm) {
     --fs-default: 14rem;

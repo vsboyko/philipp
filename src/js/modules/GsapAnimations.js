@@ -4,11 +4,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export function GsapAnimations() {
-  // Анімація карток
   const cards = document.querySelectorAll('.about__services-card');
 
   if (cards.length) {
-    gsap.set(cards, { y: 80, opacity: 0 }); // Початковий стан
+    gsap.set(cards, { y: 80, opacity: 0 });
 
     cards.forEach((card, index) => {
       gsap.to(card, {
@@ -26,22 +25,27 @@ export function GsapAnimations() {
     });
   }
 
-  const title = document.querySelector('.about__main-title');
+  const titles = document.querySelectorAll('.about__main-title');
 
-  if (title) {
-    gsap.fromTo(
-      title,
-      { y: '140rem' },
-      {
-        y: '-140rem',
-        ease: 'none',
-        scrollTrigger: {
-          trigger: title,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        },
-      }
-    );
+  if (titles.length) {
+    titles.forEach((title, index) => {
+      const isOdd = index % 2 === 0;
+      const fromX = isOdd ? '-100rem' : '100rem';
+
+      gsap.fromTo(
+        title,
+        { x: fromX },
+        {
+          x: '0rem',
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: title,
+            start: 'top 90%',
+            end: 'bottom 60%',
+            scrub: true,
+          },
+        }
+      );
+    });
   }
 }
